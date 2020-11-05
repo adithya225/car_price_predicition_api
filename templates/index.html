@@ -33,46 +33,6 @@ display:flex;
 
      <!-- Main Input For Receiving Query to our ML -->
     <form name="myform" action="{{ url_for('predict')}}"method="post" onsubmit="return(validateform());">
-	<select name="maker" style="background-color:rgba(219, 228, 236,0.5);width: 400px;height: 45px;padding: 10px;margin-bottom: 10px;font-size: 13px;text-shadow: 1px 1px 1px rgb(0,0,0);border: 1px solid rgba(0,0,0,0.3);border-radius: 4px;box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);">
-        <option value="maker" style="color: aliceblue;">transmission</option>
-        <option value="opel">opel</option>
-        <option value="audi">audi</option>
-        <option value="ford">ford</option>
-        <option value="skoda">skoda</option>
-        <option value="fiat">fiat</option>
-        <option value="seat">seat</option>
-        <option value="toyota">toyota</option>
-        <option value="citroen">citroen</option>
-        <option value="bmw">bmw</option>
-        <option value="nissan">nissan</option>
-        <option value="hyundai">hyundai</option>
-        <option value="mazda">mazda</option>
-        <option value="volvo">volvo</option>
-        <option value="kia">kia</option>
-        <option value="mini">mini</option>
-        <option value="smart">smart</option>
-        <option value="mitsubishi">mitsubishi</option>
-        <option value="porsche">porsche</option>
-        <option value="honda">honda</option>
-        <option value="suzuki">suzuki</option>
-        <option value="mercedes-benz">mercedes-benz</option>
-        <option value="jeep">jeep</option>
-        <option value="chevrolet">chevrolet</option>
-        <option value="subaru">subaru</option>
-        <option value="jaguar">jaguar</option>
-        <option value="lancia">lancia</option>
-        <option value="chrysler">chrysler</option>
-        <option value="dodge">dodge</option>
-        <option value="lexus">lexus</option>
-        <option value="maserati">maserati</option>
-        <option value="rover">rover</option>
-        <option value="bentley">bentley</option>
-        <option value="hummer">hummer</option>
-        <option value="lamborghini">lamborghini</option>
-        <option value="isuzu">isuzu</option>
-        <option value="lotus">lotus</option>
-        <option value="tesla">tesla</option>
-        </select>     
         <input type="text" style="background-color:rgba(219, 228, 236,0.5); height: 45px;" name="Year of Purchase" placeholder="Year of Purchase" required="required" /><br>
         <input type="text" style="background-color:rgba(219, 228, 236,0.5);height: 45px;" name="kms Driven" placeholder="kms Driven" required="required" /><br>
         <select name="fuel" style="background-color:rgba(219, 228, 236,0.5);width: 400px;height: 45px;padding: 10px;margin-bottom: 10px;font-size: 13px;text-shadow: 1px 1px 1px rgb(0,0,0);border: 1px solid rgba(0,0,0,0.3);border-radius: 4px;box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);">
