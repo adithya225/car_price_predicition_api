@@ -31,7 +31,7 @@ def predict():
     final_features.append(lb1.transform([features[3]])[0])
     print(len(final_features))
     prediction = model.predict([final_features])
-    output = round(prediction[0], 2)    
+    output = round(prediction[0], 0)    
     return render_template('index.html',prediction_text = output)
  
 
