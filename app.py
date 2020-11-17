@@ -36,7 +36,7 @@ def predict():
     output = round(prediction[0], 0)   
     output1 = round(pred1[0], 0)
     out = [output, output1]
-    return render_template('index.html',prediction_text = "price with repect to RandomForest is {0} and with respect to Linear Regression is {1}".format(out[0],out[1])
+    return render_template('index.html',prediction_text = "price with repect to RandomForest is {0} and with respect to Linear Regression is {1}".format(out[0],out[1]))
  
 
 
