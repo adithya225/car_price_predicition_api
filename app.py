@@ -5,7 +5,6 @@ import pickle
 app = Flask(__name__)
 model = pickle.load(open('regressor.pkl', 'rb'))
 model1 = pickle.load(open('linearregressor.pkl', 'rb'))
-model2 = pickle.load(open('random.pkl','rb'))
 lb = pickle.load(open('lb', 'rb'))
 lb1 = pickle.load(open('lb1', 'rb'))
 
@@ -37,9 +36,8 @@ def predict():
     pred2=model2.predict([final_features])
     output = round(prediction[0], 0)   
     output1 = round(pred1[0], 0)
-    output2 = round(pred2[0], 0)
-    out = [output, output1, output2]
-    return render_template('index.html',prediction_text = str(out))
+    out = [output, output1]
+    return render_template('index.html',prediction_text = print(str(out[0]+'    ---    for Random Forest Regressor                 '+str(out[1]+'   ---  for Linear Regression'+'--------------------Thanks for Using Services----------------------------')))
  
 
 
