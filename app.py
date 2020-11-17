@@ -36,8 +36,8 @@ def predict():
     output = round(prediction[0], 0)   
     output1 = round(pred1[0], 0)
     out1 = [output, output1]
-    out = '''price with repect to RANDOM FOREST ALGORITHM is             {0}
-    price with respect to LINEAR REGRESSION is        {1}'''.format(out1[0],out1[1])
+    out = "Price with repect to RANDOM FOREST REGRESSION is {0}"\
+    "Price with respect to LINEAR REGRESSION is {1}"\.format(out1[0],out1[1])
     return render_template('index.html',prediction_text = out)
  
 
