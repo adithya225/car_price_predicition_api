@@ -33,11 +33,10 @@ def predict():
     print(len(final_features))
     prediction = model.predict([final_features])
     pred1=model1.predict([final_features])
-    pred2=model2.predict([final_features])
     output = round(prediction[0], 0)   
     output1 = round(pred1[0], 0)
     out = [output, output1]
-    return render_template('index.html',prediction_text = print(str(out[0]+'    ---    for Random Forest Regressor                 '+str(out[1]+'   ---  for Linear Regression'+'--------------------Thanks for Using Services----------------------------')))
+    return render_template('index.html',prediction_text = str(out[0]+'    ---    for Random Forest Regressor                 '+str(out[1]+'   ---  for Linear Regression'+'--------------------Thanks for Using Services----------------------------')))
  
 
 
