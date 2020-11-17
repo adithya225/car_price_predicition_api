@@ -39,7 +39,7 @@ def predict():
     output1 = round(pred1[0], 0)
     output2 = round(pred2[0], 0)
     out = [output, output1, output2]
-    return render_template('index.html',prediction_text = out)
+    return render_template('index.html',prediction_text = str(out))
  
 
 
