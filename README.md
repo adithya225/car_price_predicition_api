@@ -18,4 +18,4 @@ to run it by your self and to create your owm model
 10. connect your github account to your heroku cloud account then choose the repository which you want to deploy into the cloud 
 
 then that's all you mission is Finished 
-any one arround the worls can roame arround your model to predict the result
+any one arround the world can roame arround your model to predict the result
